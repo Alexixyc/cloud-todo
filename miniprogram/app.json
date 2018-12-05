@@ -1,0 +1,24 @@
+{
+	"cloud": true,
+	"pages": [
+		"pages/todo/todo",
+		"pages/mine/mine"
+	],
+	"window": {
+		"backgroundColor": "#FFFFFF",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationBarTitleText": "TODO",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+			"pagePath": "pages/todo/todo",
+			"text": "todo"
+		}, {
+			"pagePath": "pages/mine/mine",
+			"text": "我的"
+		}]
+	}
+}

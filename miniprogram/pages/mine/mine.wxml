@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="m-header">
+        <view class="mine-avatar">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <view class="mine-nickname">
+            <open-data type="userNickName"></open-data>
+        </view>
+    </view>
+
+    <view class="m-list">
+        <button open-type="getUserInfo">登录</button>
+    </view>
+</view>

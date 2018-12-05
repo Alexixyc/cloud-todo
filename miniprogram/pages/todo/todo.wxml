@@ -1,0 +1,35 @@
+<view class="container">
+
+    <view class="header-add">
+        <input class="el-input"
+            value="{{inputValue}}"
+            bindinput="bindKeyInput"
+            placeholder="添加你的todos吧~"
+            placeholder-style="color:#999999;"/>
+        <button type="primary"
+            class="btn-add"
+            bindtap="addTodo"
+            disabled="{{inputValue == ''}}">
+            添加
+        </button>
+    </view>
+
+    <view class="list">
+        <view wx:if="{{todoList.length > 0}}">
+            <view wx:for="{{todoList}}" wx:key="{{index}}" class="list-li {{item.done ? 'done' : 'undo'}}"
+                data-status="{{item.done}}" data-id="{{item._id}}" bindtap="modifyTodoStatus">
+                <image src="img/icon-done1.svg" class="icon-done" wx:if="{{item.done}}" mode="aspectFit"/>
+                <view class="text">
+                    {{item.description}}
+                </view>
+                <button type="warn" class="btn-delete" data-id="{{item._id}}" catchtap="deleteTodo">删除</button>
+            </view>
+        </view>
+        <view wx:else class="no-data">
+            暂无未完成的TODO，赶紧去添加吧~
+        </view>
+    </view>
+
+    <loading loading="{{loading}}"></loading>
+
+</view>

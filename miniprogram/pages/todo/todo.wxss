@@ -1,0 +1,78 @@
+/* pages/mydemo/mydemo.wxss */
+.header-add {
+  margin: 40rpx auto 20rpx;
+  width: 700rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 8rpx;
+  border: 2rpx solid #d3d3d3;
+}
+.header-add .el-input {
+  width: 510rpx;
+  height: 80rpx;
+  padding: 0 20rpx;
+  color: #333333;
+  font-size: 28rpx;
+  line-height: 80rpx;
+}
+.header-add .btn-add {
+  padding: 0;
+  margin-right: 20rpx;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.list {
+  margin: 20rpx auto 0;
+  width: 680rpx;
+}
+.list-li {
+  position: relative;
+  margin-bottom: 30rpx;
+  padding: 20rpx 20rpx;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  color: #666666;
+  border-radius: 12rpx;
+  -webkit-box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+}
+.list-li .text {
+  margin-right: 120rpx;
+  word-break: break-all;
+}
+.list-li .btn-delete {
+  position: absolute;
+  right: 10rpx;
+  bottom: 15rpx;
+  padding: 0;
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+.list .done .text {
+  opacity: .5;
+  text-decoration: line-through;
+}
+.list .done .icon-done {
+  height: 90rpx;
+  width: 90rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.list .no-data {
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #888888;
+}

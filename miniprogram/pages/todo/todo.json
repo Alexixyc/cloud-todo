@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "loading": "../../components/loading/loading"
+    },
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "Cloud Todos",
+    "navigationBarTextStyle": "black"
+}
